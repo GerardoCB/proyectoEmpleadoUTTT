@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th> Nombre</th>
+          <th> Apellido Paterno</th>
+          <th> Apellido Materno</th>
+          <th> Fecha de Nacimiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @empleados.each do |empleados| %>
+          <tr>
+            <td> <%= empleados.strnombre %> </td>
+            <td> <%= empleados.strapellidopaterno %> </td>
+            <td> <%= empleados.strapellidomaterno %> </td>
+            <td> <%= empleados.dtefechanacimiento %> </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </body>
+</html>
